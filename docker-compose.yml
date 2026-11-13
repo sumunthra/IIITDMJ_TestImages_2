@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      APP_VERSION: "v2-cnn"
+    labels:
+      shipyard.route: "/"
